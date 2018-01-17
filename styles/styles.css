@@ -1,5 +1,12 @@
-/* Enforce standard font family rule */
+/* Enforce a standard font family rule - Arial */
 body{
   font-family: Arial, sans-serif;
   background-color: white;
+}
+
+/* Using a media query to add a breakpoint at 800px */
+@media (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
+  }
 }
