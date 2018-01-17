@@ -20,8 +20,11 @@
   <hr />
   <form method="GET">
     <br />
-    <label for="fullname">Full Name:
-      <input type="text" id="fullname" name="full-name">
+    <label for="first-name">First Name:
+      <input type="text" id="first-name" name="first-name" required>
+    </label>
+    <label for="last-name">Last Name:
+      <input type="text" id="last-name" name="last-name" required>
     </label>
     
     <br /><br />
@@ -33,6 +36,17 @@
         <option value="advanced">Advanced</option>
       </select>
     </label>
+    
+    <br /><br />
+    <fieldset>
+      <legend>Are you designing a web page for personal or business use?</legend>
+      <label>Personal:
+      <input type="radio" name="reason-value" value="personal">
+      </label>
+      <label>Business:
+        <input type="radio" name="reason-value" value="business">
+      </label>
+    </fieldset>  
     
     <br /><br />
     <label>Any additional comments:<br />
